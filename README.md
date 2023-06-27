@@ -24,7 +24,7 @@ Refer [Gallery][] for more syntax-specific screenshots.
 
 ### Dark mode
 
-![darkmode](img/darkmode.png)
+![dark](img/dark.png)
 
 ### Light mode
 
