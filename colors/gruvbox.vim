@@ -324,7 +324,7 @@ else
   let g:gitgutter_override_sign_column_highlight = 0
 
   if exists('g:gruvbox_sign_column')
-    let s:sign_column = get(s:gb, g:gruvbox_sign_column)
+    let s:sign_column = get(s:gb1, g:gruvbox_sign_column)
   endif
 endif
 
@@ -461,9 +461,9 @@ call s:HL('GruvboxPurpleSign', s:purple, s:sign_column, s:invert_signs)
 call s:HL('GruvboxAquaSign', s:aqua, s:sign_column, s:invert_signs)
 call s:HL('GruvboxOrangeSign', s:orange, s:sign_column, s:invert_signs)
 
-call s:HL('GruvboxGitSignsAdd', s:red, s:dark1, s:bold)
-call s:HL('GruvboxGitSignsChange', s:pink, s:dark1, s:bold)
-call s:HL('GruvboxGitSignsDelete', s:green, s:dark1, s:bold)
+call s:HL('GruvboxGitSignsAdd', s:red, s:bg1, s:bold)
+call s:HL('GruvboxGitSignsChange', s:pink, s:bg1, s:bold)
+call s:HL('GruvboxGitSignsDelete', s:green, s:bg1, s:bold)
 
 " }}}
 
