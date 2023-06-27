@@ -132,7 +132,7 @@ let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
 let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 
 let s:gb.pink           = ['#ec5f67', 38]      " 236-95-103
-let s:gb.snow           = ['#FFFAFA', -245]    " 255-250-250
+let s:gb.snow           = ['#FFFAFA', 245]     " 255-250-250
 
 " }}}
 " Setup Emphasis: {{{
