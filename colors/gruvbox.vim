@@ -302,7 +302,7 @@ endif
 
 " KicamonDefine
 let s:pink = s:gb.pink
-let s:snow = s:bg.snow
+let s:snow = s:gb.snow
 
 " }}}
 " Overload Setting: {{{
