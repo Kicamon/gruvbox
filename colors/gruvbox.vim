@@ -131,6 +131,8 @@ let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113
 let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
 let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 
+let s:bg.pink           = ['#ec5f67', 38]      " 236-95-103
+
 " }}}
 " Setup Emphasis: {{{
 
@@ -297,6 +299,9 @@ if has('nvim')
   let g:terminal_color_15 = s:fg1[0]
 endif
 
+" KicamonDefine
+let s:pink = s:bg.pink
+
 " }}}
 " Overload Setting: {{{
 
@@ -455,6 +460,10 @@ call s:HL('GruvboxBlueSign', s:blue, s:sign_column, s:invert_signs)
 call s:HL('GruvboxPurpleSign', s:purple, s:sign_column, s:invert_signs)
 call s:HL('GruvboxAquaSign', s:aqua, s:sign_column, s:invert_signs)
 call s:HL('GruvboxOrangeSign', s:orange, s:sign_column, s:invert_signs)
+
+call s:HL('GruvboxGitSignsAdd', s:red, s:dark1, s:bold)
+call s:HL('GruvboxGitSignsChange', s:pink, s:dark1, s:bold)
+call s:HL('GruvboxGitSignsDelete', s:green, s:dark1, s:bold)
 
 " }}}
 
