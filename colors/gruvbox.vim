@@ -461,18 +461,19 @@ call s:HL('GruvboxPurpleSign', s:purple, s:sign_column, s:invert_signs)
 call s:HL('GruvboxAquaSign', s:aqua, s:sign_column, s:invert_signs)
 call s:HL('GruvboxOrangeSign', s:orange, s:sign_column, s:invert_signs)
 
-call s:HL('GruvboxGitSignsAdd', s:red, s:bg1)
-call s:HL('GruvboxGitSignsChange', s:pink, s:bg1)
-call s:HL('GruvboxGitSignsDelete', s:green, s:bg1)
-
-hi! link GitSignsAdd GruvboxGitSignsAdd
-hi! link GitSignsChange GruvboxGitSignsChange
-hi! link GitSignsDelete GruvboxGitSignsDelete
-
 
 " }}}
 
 " Vanilla colorscheme ---------------------------------------------------------
+" GitSign: {{{
+call s:HL('GruvboxGitSignsAdd', s:red, s:bg1, s:invert_signs)
+call s:HL('GruvboxGitSignsChange', s:pink, s:bg1, s:invert_signs)
+call s:HL('GruvboxGitSignsDelete', s:green, s:bg1, s:invert_signs)
+
+hi! link GitSignsAdd GruvboxGitSignsAdd
+hi! link GitSignsChange GruvboxGitSignsChange
+hi! link GitSignsDelete GruvboxGitSignsDelete
+" }}}
 " General UI: {{{
 
 " Normal text
