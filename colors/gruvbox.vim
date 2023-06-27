@@ -132,6 +132,7 @@ let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
 let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 
 let s:gb.pink           = ['#ec5f67', 38]      " 236-95-103
+let s:bg.snow           = ['#FFFAFA', -245]    " 255-250-250
 
 " }}}
 " Setup Emphasis: {{{
@@ -301,6 +302,7 @@ endif
 
 " KicamonDefine
 let s:pink = s:gb.pink
+let s:snow = s:bg.snow
 
 " }}}
 " Overload Setting: {{{
@@ -474,6 +476,9 @@ hi! link GitSignsAdd GruvboxGitSignsAdd
 hi! link GitSignsChange GruvboxGitSignsChange
 hi! link GitSignsDelete GruvboxGitSignsDelete
 " }}}
+
+" VertSplit
+
 " General UI: {{{
 
 " Normal text
@@ -531,7 +536,7 @@ call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
 call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 
 " The column separating vertically split windows
-call s:HL('VertSplit', s:bg3, s:vert_split)
+call s:HL('VertSplit', s:bg3, s:bg1)
 
 " Current match in wildmenu completion
 call s:HL('WildMenu', s:blue, s:bg2, s:bold)
