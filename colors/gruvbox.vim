@@ -465,6 +465,11 @@ call s:HL('GruvboxGitSignsAdd', s:red, s:bg1)
 call s:HL('GruvboxGitSignsChange', s:pink, s:bg1)
 call s:HL('GruvboxGitSignsDelete', s:green, s:bg1)
 
+hi! link GitSignsAdd GruvboxGitSignsAdd
+hi! link GitSignsChange GruvboxGitSignsChange
+hi! link GitSignsDelete GruvboxGitSignsDelete
+
+
 " }}}
 
 " Vanilla colorscheme ---------------------------------------------------------
