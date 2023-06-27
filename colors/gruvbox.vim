@@ -466,9 +466,9 @@ call s:HL('GruvboxOrangeSign', s:orange, s:sign_column, s:invert_signs)
 
 " Vanilla colorscheme ---------------------------------------------------------
 " GitSign: {{{
-call s:HL('GruvboxGitSignsAdd', s:red, s:bg1, s:invert_signs)
-call s:HL('GruvboxGitSignsChange', s:pink, s:bg1, s:invert_signs)
-call s:HL('GruvboxGitSignsDelete', s:green, s:bg1, s:invert_signs)
+call s:HL('GruvboxGitSignsAdd', s:red, s:bg0, s:invert_signs)
+call s:HL('GruvboxGitSignsChange', s:pink, s:bg0, s:invert_signs)
+call s:HL('GruvboxGitSignsDelete', s:green, s:bg0, s:invert_signs)
 
 hi! link GitSignsAdd GruvboxGitSignsAdd
 hi! link GitSignsChange GruvboxGitSignsChange
@@ -560,7 +560,7 @@ hi! link WarningMsg GruvboxRedBold
 call s:HL('LineNr', s:bg4, s:number_column)
 
 " Column where signs are displayed
-call s:HL('SignColumn', s:none, s:sign_column)
+call s:HL('SignColumn', s:none, s:bg0)
 
 " Line used for closed folds
 call s:HL('Folded', s:gray, s:bg1, s:italic)
