@@ -909,11 +909,15 @@ call s:HL('multiple_cursors_visual', s:none, s:bg2)
 
 " }}}
 " coc.nvim: {{{
+call s:HL('CocErrorSign', s:red, s:bg0, s:invert_signs)
+call s:HL('CocWarningSign', s:red, s:bg0, s:invert_signs)
+call s:HL('CocInfoSign', s:red, s:bg0, s:invert_signs)
+call s:HL('CocHintSign', s:red, s:bg0, s:invert_signs)
 
-hi! link CocErrorSign GruvboxRedSign
-hi! link CocWarningSign GruvboxOrangeSign
-hi! link CocInfoSign GruvboxYellowSign
-hi! link CocHintSign GruvboxBlueSign
+hi! link CocErrorSign CocErrorSign
+hi! link CocWarningSign CocWarningSign
+hi! link CocInfoSign CocInfoSign
+hi! link CocHintSign CocHintSign
 hi! link CocErrorFloat GruvboxRed
 hi! link CocWarningFloat GruvboxOrange
 hi! link CocInfoFloat GruvboxYellow
