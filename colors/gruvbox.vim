@@ -477,6 +477,13 @@ hi! link GitSignsChange GruvboxGitSignsChange
 hi! link GitSignsDelete GruvboxGitSignsDelete
 " }}}
 
+
+" BufferLine: {{{
+call s:HL('BufferLineIndicatorSelected',s:red, s:bg0, s:invert_signs)
+
+hi! link BufferLineIndicatorSelected BufferLineIndicatorSelected
+}}}
+
 " General UI: {{{
 
 " Normal text
