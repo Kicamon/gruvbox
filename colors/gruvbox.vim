@@ -482,7 +482,7 @@ hi! link GitSignsDelete GruvboxGitSignsDelete
 call s:HL('BufferLineIndicatorSelected',s:red, s:bg0, s:invert_signs)
 
 hi! link BufferLineIndicatorSelected BufferLineIndicatorSelected
-}}}
+" }}}
 
 " General UI: {{{
 
