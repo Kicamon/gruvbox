@@ -649,6 +649,7 @@ hi! link Boolean GruvboxPurple
 hi! link Number GruvboxPurple
 " Floating point constant: 2.3e10
 hi! link Float GruvboxPurple
+call s:HL('Float', s:bg0, s:sign_column, s:invert_signs)
 
 " Generic type
 hi! link Type GruvboxYellow
